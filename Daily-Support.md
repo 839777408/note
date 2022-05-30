@@ -245,15 +245,14 @@ END
 GO
 ```
 
-## ISNULL与NULLIF函数区别
-SQL Server:
-	`ISNULL(check_expression, replacement_value)`
-	- 如果 check_expression 为 NULL，则返回 replacement_value
-	- 如果 check_expression 不为 NULL，则返回 check_expression
+## ISNULL与NULLIF函数区别（SQL Server）
+`ISNULL(check_expression, replacement_value)`
+- 如果 check_expression 为 NULL，则返回 replacement_value
+- 如果 check_expression 不为 NULL，则返回 check_expression
 
-	`NULLIF(expression, expression)`
-	- 如果两个 expression 相等，则返回 NULL，该 NULL 为第一个 expression 的数据类型
-	- 如果两个 expression 不相等，则返回第一个 expression
+`NULLIF(expression, expression)`
+- 如果两个 expression 相等，则返回 NULL，该 NULL 为第一个 expression 的数据类型
+- 如果两个 expression 不相等，则返回第一个 expression
 ---
 
 # Excel

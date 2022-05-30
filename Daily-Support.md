@@ -245,8 +245,15 @@ END
 GO
 ```
 
+## ISNULL与NULLIF函数区别
+SQL Server：
+ISNULL(check_expression, replacement_value)
+- 如果 check_expression 为 NULL，则返回 replacement_value
+- 如果 check_expression 不为 NULL，则返回 check_expression
 
-
+NULLIF(expression, expression)
+- 如果两个 expression 相等，则返回 NULL，该 NULL 为第一个 expression 的数据类型
+- 如果两个 expression 不相等，则返回第一个 expression
 ---
 
 # Excel
@@ -270,6 +277,11 @@ GO
 1. 这一列的文本类型选 `general `
 2. `=countif(B:B,C2)`
 3. 结果为0的，就是B列中没有出现过的，而结果不为0，则是在B列中出现过
+
+**快速生成字母开头的连续序号：**
+1. 这一列的文本类型选 `general `
+2. `="T"&TEXT(0+ROW(A1),"0000")`
+3. 第一行就是T0001,下一行就是T0002
 
 ---
 

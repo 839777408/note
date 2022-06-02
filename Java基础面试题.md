@@ -3,7 +3,7 @@ title: Java基础面试题
 tags:
   - Java
 categories:
-  - 面试
+  - 总结
 top_img: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp8.jpg'
 cover: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp8.jpg'
 abbrlink: 932b

@@ -4,7 +4,7 @@ tags:
   - MySQL
   - Redis
 categories:
-  - 面试
+  - 总结
 top_img: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp9.jpg'
 cover: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp9.jpg'
 abbrlink: 275e

@@ -308,3 +308,7 @@ GO
 4. 全部替换
 
 ---
+
+# 单元测试
+
+[JMockit中文网](http://jmockit.cn/index.htm)

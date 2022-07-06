@@ -30,7 +30,7 @@ updated: 2020-09-28 23:39:11
 
 - IDEA中创建项目
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/微信截图_20200922132609.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20200922132609.png)
 
 - 编写一个类去实现 Servlet 接口并实现 service 方法，用来处理请求和响应数据
 
@@ -102,7 +102,7 @@ public class HelloServlet implements Servlet {
 
 工程路径：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/微信截图_20200922135054.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20200922135054.png)
 
 - 启动Tomcat Server服务，在浏览器中访问：http://localhost:8080/servlet/hello，可以看到控制台输出：HelloServlet 被访问了
 
@@ -110,7 +110,7 @@ public class HelloServlet implements Servlet {
 
 ## url 地址到 Servlet 程序的访问
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/微信截图_20200922145404.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20200922145404.png)
 
 
 
@@ -218,9 +218,9 @@ public class HelloServlet2 extends HttpServlet {
 
 ## 使用 IDEA 创建 Servlet 程序
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/微信截图_20200922235424.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20200922235424.png)
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/微信截图_20200922235740.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20200922235740.png)
 
 `最后在web.xml中配置<servlet-mapping>`
 
@@ -228,7 +228,7 @@ public class HelloServlet2 extends HttpServlet {
 
 ## **Servlet** **类的继承体系** 
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/微信截图_20200923140122.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20200923140122.png)
 
 
 
@@ -454,7 +454,7 @@ http（超文本传输协议）是一个简单的请求-响应协议，它通常
 - 请求头 
   - key : value 组成 ，不同的键值对，表示不同的含义。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/微信截图_20200926114823.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20200926114823.png)
 
 GET 请求有哪些： 
 
@@ -483,7 +483,7 @@ GET 请求有哪些：
 
 - 请求体 ===>>> 就是发送给服务器的数据
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/微信截图_20200926120009.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20200926120009.png)
 
 POST 请求有： form 标签 method=post
 
@@ -503,7 +503,7 @@ POST 请求有： form 标签 method=post
 
 - 响应体 ---->>> 就是回传给客户端的数据
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/微信截图_20200926120818.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20200926120818.png)
 
 
 

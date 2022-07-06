@@ -523,7 +523,7 @@ props的值有两种方式：
 
 当我们有自定义构造函数时，验证也支持自定义的类型
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201028171445.jpg)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201028171445.png)
 ![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201028165717.png)
 
 

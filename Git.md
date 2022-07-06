@@ -40,11 +40,11 @@ updated: 2020-10-8 15:51:46
 
 集中式版本控制工具： CVS、**SVN**、VSS……
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/微信截图_20201005192430.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201005192430.png)
 
 分布式版本控制工具： **Git**、Mercurial、Bazaar、Darcs……
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/微信截图_20201005192508.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201005192508.png)
 
 
 
@@ -54,7 +54,7 @@ updated: 2020-10-8 15:51:46
 
 ### 简史
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201006143119.jpg)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201006143119.png)
 
 ### 优势
 

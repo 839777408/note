@@ -591,7 +591,7 @@ context是一个和store对象具有相同方法和属性的对象。
 
 在Action中，我们可以将异步操作放在一个Promise中，并且在成功或者失败后，调用对应的resolve或reject。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201115222745.jpg)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201115222745.png)
 
 
 

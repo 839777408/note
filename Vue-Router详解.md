@@ -51,7 +51,7 @@ updated: 2020-11-19 10:20:45
 2. 前端开发人员如果要开发页面，需要通过PHP和Java等语言来编写页面代码。
 3. 通常情况下HTML代码和数据以及对应的逻辑会混在一起，编写和维护都是非常糟糕的事情。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201110094425.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201110094425.png)
 
 
 
@@ -65,7 +65,7 @@ updated: 2020-11-19 10:20:45
 - 并且当移动端(iOS/Android)出现后，后端不需要进行任何处理，依然使用之前的一套API即可。
 - 目前很多的网站依然采用这种模式开发。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201110094819.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201110094819.png)
 
 
 
@@ -75,7 +75,7 @@ updated: 2020-11-19 10:20:45
 - 整个网站只有一个HTML页面。
 - 前端路由的核心是：改变URL，但是页面不进行整体的刷新。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201110095255.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201110095255.png)
 
 
 
@@ -89,7 +89,7 @@ URL的hash也就是锚点(#)， 本质上是改变 window.location 的 href 属�
 
 我们可以通过直接赋值 location.hash 来改变 href , 但是页面不发生刷新。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201110100537.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201110100537.png)
 
 ## HTML5的history模式：pushState
 
@@ -97,7 +97,7 @@ history接口是HTML5新增的, 它有五种模式改变URL而不刷新页面。
 
 改变URL后浏览器左上方可以前进和后退。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201110100732.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201110100732.png)
 
 
 
@@ -105,13 +105,13 @@ history接口是HTML5新增的, 它有五种模式改变URL而不刷新页面。
 
 改变URL后浏览器左上方不可以前进和后退，按钮是灰色的。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201110101225.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201110101225.png)
 
 
 
 ## HTML5的history模式：go
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201110101451.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201110101451.png)
 
 > 上面只演示了三个方法，因为 history.back()  等价于 history.go(-1)，history.forward() 则等价于 history.go(1)，这三个接口等同于浏览器界面的前进后退。
 
@@ -175,19 +175,19 @@ new Vue({
 
 在src/components中新建.vue文件：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201111111059.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201111111059.png)
 
 ## （四）配置组件和路径的映射关系
 
 在src/router/index.js中配置如下：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201111111614.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201111111614.png)
 
 ## （五）使用路由
 
 在src/App.vue中配置如下：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201111112112.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201111112112.png)
 
 > `<router-link>`：该标签是一个vue-router中已经内置的组件, 它会被渲染成一个`<a>`标签。
 > `<router-view>`：该标签会根据当前的路径, 动态渲染出不同的组件。
@@ -196,7 +196,7 @@ new Vue({
 
 ## （六）最终效果
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201111113241.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201111113241.png)
 
 
 
@@ -246,7 +246,7 @@ const router = new VueRouter({
 
 **可以看到url地址中没有了#**
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201111114735.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201111114735.png)
 
 
 
@@ -260,7 +260,7 @@ const router = new VueRouter({
 - replace：不会留下history记录，所以指定replace的情况下，点击后退键返回并不能返回到上一个页面中。
 - active-class：当`<router-link>`对应的路由匹配成功时，会自动给当前元素设置一个**router-link-active**的class，而我们可以通过设置 active-class 来修改默认的class属性。
   - 在进行高亮显示的导航菜单或者底部tabbar时会使用到该类。但是通常不会修改类的属性，会直接使用默认的**router-link-active**即可。
-  - ![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201111121425.png)
+  - ![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201111121425.png)
 
 `<router-link to="/home" tag="button" replace active-class="active">首页</router-link>`
 
@@ -278,7 +278,7 @@ const router = new VueRouter({
 })
 ```
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201111121500.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201111121500.png)
 
 
 
@@ -370,7 +370,7 @@ const routes = [
 
 ## 路由懒加载的效果
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201111125039.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201111125039.png)
 
 
 
@@ -397,7 +397,7 @@ const Home = () => import('../components/Home.vue')
 嵌套路由是一个很常见的功能，比如在home页面中,，我们希望通过/home/news和/home/message访问一些内容。
 路径和组件的关系如下：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201111125526.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201111125526.png)
 
 ## 嵌套路由实现
 
@@ -406,13 +406,13 @@ const Home = () => import('../components/Home.vue')
 1. 创建对应的子组件, 并且在路由映射中配置对应的子路由（嵌套路由也可以配置默认的路径）。
 2. 在组件内部使用`<router-view>`标签。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201111125920.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201111125920.png)
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201111141215.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201111141215.png)
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201111141436.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201111141436.png)
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201111142015.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201111142015.png)
 
 
 
@@ -432,7 +432,7 @@ const Home = () => import('../components/Home.vue')
 
 `下图12行才是params的传递方式`
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201111152139.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201111152139.png)
 
 ---
 
@@ -588,7 +588,7 @@ export default {
 
 ## 思路
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201112143446.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201112143446.png)
 
 
 

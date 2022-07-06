@@ -64,7 +64,7 @@ CMD ["/bin/bash"]
 
 ---
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20210626120726.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20210626120726.png)
 
 从应用软件的角度来看，Dockerfile、Docker镜像与Docker容器分别代表软件的三个不同阶段：
 
@@ -101,7 +101,7 @@ Dockerfile面向开发，Docker镜像成为交付标准，Docker容器则涉及�
 | ENTRYPOINT | 指定这个容器启动的时候要运行的命令，可以追加命令 。ENTRYPOINT的目的和CMD一样，都是在指定容器启动程序及参数 |
 | ONBUILD    | 当构建一个被继承的Dockerfile时运行命令，父镜像在被子继承后父镜像的onbuild被触发 |
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20210905171117.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20210905171117.png)
 
 ---
 
@@ -457,7 +457,7 @@ $ sudo docker pull registry.cn-shenzhen.aliyuncs.com/nanzx/mytomcat:[镜像版�
 
 
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/202195224730.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/202195224730.png)
 
 ---
 
@@ -539,7 +539,7 @@ docker run -d
 
 # 总结
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20210905223219.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20210905223219.png)
 
 ---
 

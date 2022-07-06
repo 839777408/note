@@ -160,7 +160,7 @@ http.cors.allow-origin: "*"
 
 查看集群状态：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20211120232055.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20211120232055.png)
 
 > status 字段指示着当前集群在总体上是否工作正常。它的三种颜色含义如下：
 >
@@ -170,11 +170,11 @@ http.cors.allow-origin: "*"
 
 向集群中的 node-1001 节点增加索引：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20211120232533.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20211120232533.png)
 
 向集群中的 node-1002 节点查询索引：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20211120232647.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20211120232647.png)
 
 ---
 

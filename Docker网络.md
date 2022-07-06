@@ -117,7 +117,7 @@ PING 172.17.0.4 (172.17.0.4) 56(84) bytes of data.
 
 ## 小结
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20210911002732.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20210911002732.png)
 
 **结论**：
 
@@ -125,7 +125,7 @@ PING 172.17.0.4 (172.17.0.4) 56(84) bytes of data.
 
 
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20210911003146.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20210911003146.png)
 
 **结论**：
 
@@ -401,7 +401,7 @@ Options:
       --link-local-ip strings   Add a link-local address for the container
 ```
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20210911142856.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20210911142856.png)
 
 正常情况如图所示，tomcat-01是不能直接访问tomcat-net-01的，需通过`docker network connect mynet tomcat-01 `将 tomcat01加到 mynet网络，这时tomcat01会有两个IP地址。
 

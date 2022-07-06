@@ -70,7 +70,7 @@ Mustache: 胡子/胡须
 
 页面展示如下：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201013152521.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201013152521.png)
 
 
 
@@ -100,7 +100,7 @@ Mustache: 胡子/胡须
 
 页面展示如下：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201013152543.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201013152543.png)
 
 
 
@@ -723,7 +723,7 @@ v-on也有对应的语法糖：v-on:click可以写成@click
 
 各个按钮依次点击效果如下：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201018232510.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201018232510.png)
 
 
 

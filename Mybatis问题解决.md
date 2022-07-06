@@ -113,7 +113,7 @@ logging:
 
 # 非法参数异常： argument type mismatch
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20210127232544.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20210127232544.png)
 
 我的Dao层：
 

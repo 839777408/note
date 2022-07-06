@@ -114,7 +114,7 @@ public class DataSourceConfig {
 
 http://localhost:8080/druid/index.html
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20210110004042.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20210110004042.png)
 
 ---
 

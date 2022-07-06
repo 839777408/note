@@ -129,7 +129,7 @@ pom中配置<configurationFile>的路径下的MBG配置文件（根据需求修�
 
 最后在IDEA的右边栏中选中Maven，执行相应插件：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20210127234326.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20210127234326.png)
 
 ---
 

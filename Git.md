@@ -40,11 +40,11 @@ updated: 2020-10-8 15:51:46
 
 集中式版本控制工具： CVS、**SVN**、VSS……
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/微信截图_20201005192430.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/微信截图_20201005192430.png)
 
 分布式版本控制工具： **Git**、Mercurial、Bazaar、Darcs……
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/微信截图_20201005192508.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/微信截图_20201005192508.png)
 
 
 
@@ -54,7 +54,7 @@ updated: 2020-10-8 15:51:46
 
 ### 简史
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201006143119.jpg)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201006143119.jpg)
 
 ### 优势
 
@@ -70,7 +70,7 @@ updated: 2020-10-8 15:51:46
 
 ### Git结构
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20201006144816.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20201006144816.png)
 
 ### 代码托管中心
 
@@ -82,7 +82,7 @@ updated: 2020-10-8 15:51:46
 
 ### 跨团队协作
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20201006174847.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20201006174847.png)
 
 ### 安装
 
@@ -102,7 +102,7 @@ updated: 2020-10-8 15:51:46
 
 **命令：**`git init`
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/202010061755.jpg)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/202010061755.jpg)
 
 注意： .git 目录中存放的是本地库相关的子目录和文件，不要删除，也不要胡乱修改。
 
@@ -130,7 +130,7 @@ updated: 2020-10-8 15:51:46
 
 信息保存位置： .git 目录下的 config 文件中
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201007103825.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201007103825.png)
 
 **系统用户级别：**登录当前操作系统的用户范围 
 
@@ -140,7 +140,7 @@ updated: 2020-10-8 15:51:46
 
 信息保存位置：~/.gitconfig （根目录下的 .gitconfig文件中）
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201007160012.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201007160012.png)
 
 > 级别优先级：
 >
@@ -192,7 +192,7 @@ updated: 2020-10-8 15:51:46
 
 `git reflog` 
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201007160950.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201007160950.png)
 
 >- 多屏显示控制方式： 
 >  - 空格向下翻页 
@@ -259,7 +259,7 @@ updated: 2020-10-8 15:51:46
 
 在版本控制过程中，使用多条线同时推进多个任务。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201007172431.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201007172431.png)
 
 **好处：**
 
@@ -295,7 +295,7 @@ updated: 2020-10-8 15:51:46
 
 **解决冲突 ：**
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201007180054.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201007180054.png)
 
 1. 编辑文件，删除特殊符号 
 
@@ -327,7 +327,7 @@ updated: 2020-10-8 15:51:46
 
 哈希算法可以被用来验证文件。原理如下图所示：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201007193359.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201007193359.png)
 
 Git 就是靠这种机制来从根本上保证数据完整性的。 
 
@@ -339,7 +339,7 @@ Git 就是靠这种机制来从根本上保证数据完整性的。
 
 以文件变更列表的方式存储信息。这类系统将它们保存的信息看作是一组基本文件和每个文件随时间逐步累积的差异。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/2020107193820.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020107193820.png)
 
 ---
 
@@ -347,7 +347,7 @@ Git 就是靠这种机制来从根本上保证数据完整性的。
 
 Git 把数据看作是小型文件系统的一组快照。每次提交更新时 Git 都会对当前的全部文件制作一个快照并保存这个快照的索引。为了高效，如果文件没有修改，Git 不再重新存储该文件，而是只保留一个链接指向之前存储的文件。所以 Git 的工作方式可以称之为快照流。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/2020107193900.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020107193900.png)
 
 
 
@@ -355,43 +355,43 @@ Git 把数据看作是小型文件系统的一组快照。每次提交更新时 
 
 - Git 的”提交对象“
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/2020107195524.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020107195524.png)
 
 
 
 - 提交对象及其父对象形成的链条
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/2020107195538.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020107195538.png)
 
 
 
 ### Git分支管理机制
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/2020107200212.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020107200212.png)
 
 ---
 
 **由master分支切换到testing分支：**
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/2020107200223.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020107200223.png)
 
 ---
 
 **testing分支提交到本地库：**
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/2020107200235.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020107200235.png)
 
 ---
 
 **切换回master分支：**
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/2020107200251.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020107200251.png)
 
 ---
 
 **master分支提交到本地库：**
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/2020107200304.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020107200304.png)
 
 
 
@@ -399,13 +399,13 @@ Git 把数据看作是小型文件系统的一组快照。每次提交更新时 
 
 ### 创建远程仓库
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201008140047.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201008140047.png)
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201008140332.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201008140332.png)
 
 ### 查看远程仓库地址
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201008140720.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201008140720.png)
 
 ### 查看当前所有远程地址别名
 
@@ -429,7 +429,7 @@ Git 把数据看作是小型文件系统的一组快照。每次提交更新时 
 
 ### 团队成员邀请
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog2/20201008143446.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201008143446.png)
 
 ### 拉取
 

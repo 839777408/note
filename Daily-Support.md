@@ -4,8 +4,8 @@ categories:
   - 总结
 tags:
   - 总结
-top_img: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp9.jpg'
-cover: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp9.jpg'
+top_img: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp9.jpg'
+cover: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp9.jpg'
 abbrlink: 24756
 top: 99
 date: 2022-05-09 19:31:40

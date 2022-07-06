@@ -4,8 +4,8 @@ tags:
   - Webpack
 categories:
   - Vue
-top_img: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp7.jpg'
-cover: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp7.jpg'
+top_img: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp7.jpg'
+cover: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp7.jpg'
 abbrlink: a5d2
 date: 2020-11-5 15:16:07
 updated: 2020-11-7 15:23:31
@@ -41,7 +41,7 @@ grunt/gulp的核心是**Task**:
 
 我们来看一个gulp的task，这个task就是将src下面的所有js文件转成ES5的语法，并且最终输出到dist文件夹中。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201104185928.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201104185928.png)
 
 
 
@@ -172,7 +172,7 @@ console.log(height)
 
 打包后会在dist文件下，生成一个bundle.js文件，这个文件是webpack处理了项目的直接文件依赖后生成的一个js文件，我们只需要将这个js文件在index.html中引入即可。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201104222230.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201104222230.png)
 
 
 
@@ -185,7 +185,7 @@ console.log(height)
 
 path是node_modules文件夹中的一个webpack自带模块，__dirname是获取当前配置文件的绝对路径。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201104223404.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201104223404.png)
 
 
 
@@ -332,7 +332,7 @@ require("./css/normal.css")
 
 在webpack的官方网站中，我们可以找到如下关于样式的loader使用方法：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201105102307.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201105102307.png)
 
 
 
@@ -495,7 +495,7 @@ module.exports = {
 
 仔细观察，背景图是通过base64显示的，这也是limit属性的作用，当图片小于8kb时，对图片进行base64编码：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201105110001.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201105110001.png)
 
 
 
@@ -643,7 +643,7 @@ index.html文件：
 
 修改完成后，重新打包没有出现错误，但是运行程序，没有出现想要的效果，而且浏览器中有报错：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201105114424.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201105114424.png)
 
 这里是因为涉及到Vue的不同版本构建，runtime-only（不可以有任何template）和runtime-compiler的区别。
 

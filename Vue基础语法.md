@@ -4,8 +4,8 @@ tags:
   - Vue
 categories:
   - Vue
-top_img: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp4.jpg'
-cover: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp4.jpg'
+top_img: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp4.jpg'
+cover: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp4.jpg'
 abbrlink: '4159'
 date: 2020-10-25 14:18:36
 updated: 2020-10-25 14:18:40
@@ -70,7 +70,7 @@ Mustache: 胡子/胡须
 
 页面展示如下：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201013152521.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201013152521.png)
 
 
 
@@ -100,7 +100,7 @@ Mustache: 胡子/胡须
 
 页面展示如下：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201013152543.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201013152543.png)
 
 
 
@@ -723,7 +723,7 @@ v-on也有对应的语法糖：v-on:click可以写成@click
 
 各个按钮依次点击效果如下：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201018232510.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201018232510.png)
 
 
 

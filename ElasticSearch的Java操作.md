@@ -4,8 +4,8 @@ categories:
   - ElasticSearch
 tags:
   - ElasticSearch
-top_img: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp2.jpg'
-cover: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp2.jpg'
+top_img: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp2.jpg'
+cover: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp2.jpg'
 abbrlink: 15202
 date: 2021-11-08 23:57:05
 updated: 2021-11-19 00:18:15

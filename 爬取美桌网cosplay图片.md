@@ -5,8 +5,8 @@ tags:
 categories:
   - Python
   - 爬虫
-top_img: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp13.jpg'
-cover: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp13.jpg'
+top_img: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp13.jpg'
+cover: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp13.jpg'
 abbrlink: e434
 date: 2020-09-29 10:46:27
 updated: 2020-09-29 10:46:32
@@ -34,13 +34,13 @@ updated: 2020-09-29 10:46:32
 
 - 打开目标网址后，我们发现url地址栏中下划线后面的数字表示这是该cosplay大全的第几页。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20200929113954.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20200929113954.png)
 
 ---
 
 - 在浏览器中选中相册右键选择检查，可以看到该模块对应的前端代码，我们的目标就是获取黄色方框的url地址，也就是每个相册所在的网页地址。于是我们可以使用XPath插件通过标签去一步步定位，可以看到results结果集里有24条数据，刚好对应每页24个相册。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706214939.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214939.png)
 
 对应的xpath为：
 
@@ -50,13 +50,13 @@ updated: 2020-09-29 10:46:32
 
 - 进入相册后，我们发现url地址栏中下划线后面的数字表示这是该相册的第几张图片。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215034.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215034.png)
 
 ---
 
 - 右键检查图片，data-original后面的url地址即是我们最终需要的图片地址，可通过该地址下载图片。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215035.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215035.png)
 
 对应的xpath为：
 
@@ -117,4 +117,4 @@ for page in range(1, 6):
 
 **运行结果：**
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706214940.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214940.png)

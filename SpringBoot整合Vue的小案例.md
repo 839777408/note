@@ -4,8 +4,8 @@ tags:
   - 跨域
 categories:
   - Vue
-top_img: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp12.jpg'
-cover: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp12.jpg'
+top_img: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp12.jpg'
+cover: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp12.jpg'
 abbrlink: bccf
 date: 2020-11-18 09:34:36
 updated: 2020-12-7 12:00:28
@@ -27,7 +27,7 @@ updated: 2020-12-7 12:00:28
 
 
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201118090102.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201118090102.png)
 
 
 
@@ -35,7 +35,7 @@ updated: 2020-12-7 12:00:28
 
 ## 目录结构
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201118090504.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201118090504.png)
 
 
 
@@ -195,7 +195,7 @@ public class GoodsController {
 
 ## 项目结构
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201118091714.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201118091714.png)
 
 
 
@@ -337,7 +337,7 @@ export default router
 
 点击“商品列表”，这时浏览器的控制台报错：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20201117165902.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201117165902.png)
 
 这是因为出现跨域问题，我们的vue项目部署在8080端口，而服务器端口是8181端口。
 

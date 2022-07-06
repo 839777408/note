@@ -6,8 +6,8 @@ tags:
 categories:
   - Java
   - 数据结构和算法
-top_img: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp1.jpg'
-cover: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp1.jpg'
+top_img: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp1.jpg'
+cover: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp1.jpg'
 abbrlink: 8c51
 date: 2020-08-21 12:52:18
 updated: 2020-08-21 12:52:18
@@ -26,27 +26,27 @@ updated: 2020-08-21 12:52:18
 
 ## 思路图解
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215637.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215637.png)
 
 ---
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215638.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215638.png)
 
 ---
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215639.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215639.png)
 
 ---
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215640.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215640.png)
 
 ---
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215633.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215633.png)
 
 ---
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706214959.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214959.png)
 
 ---
 
@@ -107,7 +107,7 @@ Knuth-Morris-Pratt 字符串查找算法，简称为 “KMP算法”，常用于
 
 为此，为**模式串P**计算出一张《部分匹配表》，也称前缀表：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706214946.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214946.png)
 
 根据《部分匹配表》求 next 数组：
 
@@ -123,31 +123,31 @@ next数组的作用是方便我们运算。
 
 当空格与D不匹配时，**保持文本串S的 i 位置不变，继续指向空格**，模式串P的 j 位置原本指向D，现在指向失配字符(D)对应的next值，也就是 j = next[ j ]; 即 j = 2， j 指向模式串中下标为2的C。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215633.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215633.png)
 
 ---
 
 发现空格与C不匹配时，**保持文本串S的 i 位置不变，继续指向空格**，模式串P的 j 位置指向失配字符(C)对应的next值，即 j = 0， j 指向模式串中下标为0的A。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706214953.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214953.png)
 
 ---
 
 此时又发现空格与A不匹配，**这时模式串P的 j = 0，当 j=0 且不匹配时，文本串S的 i 位置要向右移动一位。**
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706214951.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214951.png)
 
 ---
 
 D与C 失配，模式串P的 j 位置指向失配字符(D)对应的next值，即 j = 2， j 指向模式串中下标为2的C。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706214956.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214956.png)
 
 ---
 
 匹配成功，过程结束，相较于暴力算法的不停回溯 i 位置，此算法效率较高。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215631.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215631.png)
 
 
 
@@ -155,9 +155,9 @@ D与C 失配，模式串P的 j 位置指向失配字符(D)对应的next值，即
 
 ## 前缀表
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706214946.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214946.png)
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706214952.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214952.png)
 
 看了这张表不难发现部分匹配值其实就是子串的**前缀和后缀的最大公共元素长度**。这里的**前缀和后缀并不包括子串本身**。
 
@@ -165,7 +165,7 @@ D与C 失配，模式串P的 j 位置指向失配字符(D)对应的next值，即
 
 > 看下图，绿色部分代表前缀和后缀的最长公共元素，红色代表失配位置，当失配时，前缀的最长公共元素直接移动到原后缀最长公共元素位置，失配位重新匹配，避免模式串从头开始，也就是绿色前缀不用再匹配了。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20200821235030.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20200821235030.png)
 
 
 
@@ -196,7 +196,7 @@ next数组是把《部分匹配表》的**部分匹配值往右右移一格，�
 
 4. 若p[k] ≠ p[j]，如果此时p[ next[k] ] == p[j]，则next[ j + 1 ] =  next[ k ] + 1，否则继续递归前缀索引 **k = next[k]**，而后重复此过程。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215003.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215003.png)
 
 
 

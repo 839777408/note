@@ -4,8 +4,8 @@ categories:
   - Docker
 tags:
   - Docker
-top_img: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp7.jpg'
-cover: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp7.jpg'
+top_img: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp7.jpg'
+cover: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp7.jpg'
 abbrlink: '6883'
 date: 2021-05-31 10:21:45
 updated: 2021-6-19 13:38:22
@@ -55,7 +55,7 @@ Linux 容器技术的出现就解决了这样一个问题，而 Docker 就是在
 
 它可以在一种操作系统里面运行另一种操作系统，比如在Windows 系统里面运行Linux 系统。应用程序对此毫无感知，因为虚拟机看上去跟真实系统一模一样，而对于底层系统来说，虚拟机就是一个普通文件，不需要了就删掉，对其他部分毫无影响。这类虚拟机完美的运行了另一套系统，能够使应用程序，操作系统和硬件三者之间的逻辑不变。 
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20210531162229.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20210531162229.png)
 
 虚拟机的缺点：资源占用多、冗余步骤多、启动慢
 
@@ -65,7 +65,7 @@ Linux 容器技术的出现就解决了这样一个问题，而 Docker 就是在
 
 Linux 容器**不是模拟一个完整的操作系统**，而是对进程进行隔离。有了容器，就可以将软件运行所需的所有资源打包到一个隔离的容器中。容器与虚拟机不同，不需要捆绑一整套操作系统，只需要软件工作所需的库资源和设置。系统因此而变得高效轻量并保证部署在任何环境中的软件都能始终如一地运行。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20210531163236.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20210531163236.png)
 
 ---
 
@@ -111,7 +111,7 @@ Linux 容器**不是模拟一个完整的操作系统**，而是对进程进行�
 
 - 架构图：
 
-  ![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20210531175422.png)
+  ![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20210531175422.png)
 
   >**总结：**
   >
@@ -252,7 +252,7 @@ https://docs.docker.com/get-started/
 
 `docker run hello-world`，run干了什么？
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20210601231109.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20210601231109.png)
 
 ---
 
@@ -260,7 +260,7 @@ Docker是怎么工作的？
 
 Docker是一个**Client-Server结构**的系统，Docker守护进程运行在主机上， 然后通过Socket连接从客户端访问，守护进程从客户端接受命令并管理运行在主机上的容器。 容器，是一个运行时环境，就是我们前面说到的集装箱。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20210601232208.png)
+![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20210601232208.png)
 
 ---
 
@@ -269,7 +269,7 @@ Docker是一个**Client-Server结构**的系统，Docker守护进程运行在主
 1. docker有着比虚拟机更少的抽象层。由于docker不需要Hyper-visor**实现硬件资源虚拟化**，运行在docker容器上的程序直接使用的都是实际物理机的硬件资源。因此在CPU、内存利用率上docker将会在效率上有明显优势。
 2. docker利用的是宿主机的内核，而不需要Guest OS。因此当新建一个容器时，docker不需要和虚拟机一样重新加载一个操作系统内核。从而避免引寻、加载操作系统内核这个比较费时费资源的过程，当新建一个虚拟机时，虚拟机软件需要加载Guest OS，这个新建过程是分钟级别的。而docker由于直接利用宿主机的操作系统,则省略了这个过程，因此新建一个docker容器只需要几秒钟。
 
-​                   ![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20210601232756.png)
+​                   ![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20210601232756.png)
 
 |          | Dcoker容器             | 虚拟机（VM）                |
 | -------- | ---------------------- | --------------------------- |

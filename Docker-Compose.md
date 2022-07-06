@@ -4,8 +4,8 @@ categories:
   - Docker
 tags:
   - Docker Compose
-top_img: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp12.jpg'
-cover: 'https://cdn.jsdelivr.net/gh/839777408/tupian/img/wp12.jpg'
+top_img: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp12.jpg'
+cover: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp12.jpg'
 abbrlink: 51962
 date: 2021-09-12 22:11:03
 updated: 2021-10-27 23:45:42

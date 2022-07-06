@@ -457,7 +457,7 @@ $ sudo docker pull registry.cn-shenzhen.aliyuncs.com/nanzx/mytomcat:[镜像版�
 
 
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/202195224730.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215002.png)
 
 ---
 

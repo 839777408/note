@@ -33,7 +33,7 @@ bootfs(boot file system)主要包含bootloader和kernel， bootloader主要是�
 
 rootfs (root file system) ，在bootfs之上。包含的就是典型 Linux 系统中的 /dev, /proc, /bin, /etc 等标准目录和文件。rootfs就是各种不同的操作系统发行版，比如Ubuntu，Centos等等。 
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2021614125345.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215036.png)
 
 >* **平时我们安装进虚拟机的CentOS都是好几个G，为什么docker里才200M？**
 >

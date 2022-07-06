@@ -102,7 +102,7 @@ updated: 2020-10-8 15:51:46
 
 **命令：**`git init`
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/202010061755.jpg)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215000.png)
 
 注意： .git 目录中存放的是本地库相关的子目录和文件，不要删除，也不要胡乱修改。
 
@@ -339,7 +339,7 @@ Git 就是靠这种机制来从根本上保证数据完整性的。
 
 以文件变更列表的方式存储信息。这类系统将它们保存的信息看作是一组基本文件和每个文件随时间逐步累积的差异。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020107193820.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215018.png)
 
 ---
 
@@ -347,7 +347,7 @@ Git 就是靠这种机制来从根本上保证数据完整性的。
 
 Git 把数据看作是小型文件系统的一组快照。每次提交更新时 Git 都会对当前的全部文件制作一个快照并保存这个快照的索引。为了高效，如果文件没有修改，Git 不再重新存储该文件，而是只保留一个链接指向之前存储的文件。所以 Git 的工作方式可以称之为快照流。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020107193900.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215019.png)
 
 
 
@@ -355,43 +355,43 @@ Git 把数据看作是小型文件系统的一组快照。每次提交更新时 
 
 - Git 的”提交对象“
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020107195524.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215020.png)
 
 
 
 - 提交对象及其父对象形成的链条
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020107195538.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215021.png)
 
 
 
 ### Git分支管理机制
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020107200212.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215022.png)
 
 ---
 
 **由master分支切换到testing分支：**
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020107200223.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215023.png)
 
 ---
 
 **testing分支提交到本地库：**
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020107200235.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215024.png)
 
 ---
 
 **切换回master分支：**
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020107200251.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215025.png)
 
 ---
 
 **master分支提交到本地库：**
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020107200304.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215026.png)
 
 
 

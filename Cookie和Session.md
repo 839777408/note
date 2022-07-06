@@ -589,7 +589,7 @@ public class SessionServlet extends BaseServlet {
 
 Session 技术底层其实是 **基于Cookie技术** 来实现的。服务器向客户端浏览器发送一个名为JSESSIONID的Cookie，它的值为该Session的id。该Cookie的maxAge属性一般为–1，表示仅当前浏览器内有效，并且各浏览器窗口间不共享，关闭浏览器就会失效。
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020-10-4201452.jpg)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706214941.png)
 
 
 

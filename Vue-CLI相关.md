@@ -132,7 +132,7 @@ updated: 2020-11-09 01:29:08
 
 **类型**：`(createElement: () => VNode) => VNode`
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020110834715.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215027.png)
 
 Vue 选项中的 `render` 函数若存在，则 Vue 构造函数不会从 `template` 选项或通过 `el` 选项指定的挂载元素中提取出的 HTML 模板编译渲染函数。
 
@@ -196,7 +196,7 @@ vue-cli 3 与 2 版本有很大区别：
 
 - 可以看到目录结构与2的相比少了配置目录，也就是没了build和config，配置文件都到了@vue模块里：
 
-![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/2020110912305.png)
+![](https://cdn.jsdelivr.net/gh/839777408/tupian/blog/20220706215028.png)
 
 - 可以自定义vue.config.js
 

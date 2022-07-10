@@ -5,8 +5,8 @@ tags:
   - Redis
 categories:
   - 总结
-top_img: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp9.jpg'
-cover: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp9.jpg'
+top_img: 'https://npm.elemecdn.com/nan-picture/img/wp9.jpg'
+cover: 'https://npm.elemecdn.com/nan-picture/img/wp9.jpg'
 abbrlink: 275e
 date: 2020-09-05 12:36:31
 updated: 2020-09-05 12:36:35

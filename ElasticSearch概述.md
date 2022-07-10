@@ -4,8 +4,8 @@ categories:
   - ElasticSearch
 tags:
   - ElasticSearch
-top_img: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp13.jpg'
-cover: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp13.jpg'
+top_img: 'https://npm.elemecdn.com/nan-picture/img/wp13.jpg'
+cover: 'https://npm.elemecdn.com/nan-picture/img/wp13.jpg'
 abbrlink: 1260
 date: 2021-10-31 22:04:35
 updated: 2021-11-01 00:05:10
@@ -23,7 +23,7 @@ updated: 2021-11-01 00:05:10
 
 我们一般会用特定的表结构来组织和管理数据，它一般表现为二维表结构，比如我们用户数据，其中包含了用户姓名，年龄，身份证信息，这些信息是有关系的，所以可以保存到关系型数据库当中，比如MySQL、Oracle当中，并可以通过搜索语句来进行查询，为了提高效率，我们甚至可以采用一些索引的方式来优化它，结构化数据的优点就是方便管理和查询，但是它的缺点是扩展结构是很难的，当我们已经有了现有的结构之后我们再去扩展，其实很不方便。
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211031231103.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211031231103.png)
 
 ---
 
@@ -31,7 +31,7 @@ updated: 2021-11-01 00:05:10
 
 所谓的非结构化数据其实就是我们无法用二维表结构来表现的数据，比方说服务器日志，通讯记录，工作文档，包括报表，还有视频等。这些数据的维度广而且数据量大，所以数据存储和查询的成本是非常大的，往往需要专业的人员和大量的统计模型来进行处理，一般将数据保存到非关系型数据库当中，比如MongoDB、 redis，一般都是以KV结构来进行保存的，通过KEY来查询我们的数据，相对来说比较快。
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211031231141.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211031231141.png)
 
 ---
 
@@ -39,7 +39,7 @@ updated: 2021-11-01 00:05:10
 
 半结构化数据则是数据的结构和内容混在一起，没有明显的区分。比如XML、HTML这样的文档，这样的数据一般也都是保存到MongoDB、 redis、HBase当中。但它的缺点就在于查询它的内容不是很容易。生活中很多场景下，我们查找的对象并非都是关系型结构化的信息，我们无法像数据库模糊查询那样模糊匹配，更不可能遍历所有的内容做匹配，毕竟查询的目的是为了快速找到你想要的信息。
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211031231207.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211031231207.png)
 
 >所以如何查询半结构化数据以及非结构化数据当中的内容，并且准确的查询是非常重要的。Elasticsearch软件J就是为了解决这样问题所产生的软件。
 
@@ -83,7 +83,7 @@ Lucene 是 Apache 软件基金会 Jakarta 项目组的一个子项目，提供�
 
 在使用过程中，一般都会将 Elasticsearch 和 Solr 这两个软件对比，然后进行选型。这两个搜索引擎都是流行的，先进的的开源搜索引擎。它们都是围绕核心底层搜索库 - Lucene构建的 - 但它们又是不同的。像所有东西一样，每个都有其优点和缺点：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211101000002.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211101000002.png)
 
 
 

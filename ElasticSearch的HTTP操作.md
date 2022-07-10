@@ -4,8 +4,8 @@ categories:
   - ElasticSearch
 tags:
   - ElasticSearch
-top_img: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp1.jpg'
-cover: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp1.jpg'
+top_img: 'https://npm.elemecdn.com/nan-picture/img/wp1.jpg'
+cover: 'https://npm.elemecdn.com/nan-picture/img/wp1.jpg'
 abbrlink: 6184
 date: 2021-11-01 22:18:36
 updated: 2021-11-8 23:51:44
@@ -29,7 +29,7 @@ updated: 2021-11-8 23:51:44
 
 Elasticsearch 是面向文档型数据库，一条数据在这里就是一个文档。为了方便理解，我们将 Elasticsearch 里存储文档数据和关系型数据库 MySQL 存储数据的概念进行一个类比：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211101234242.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211101234242.png)
 
 ES 里的 Index 可以看做一个库，而 Types 相当于表，Documents 则相当于表的行。这里 Types 的概念已经被逐渐弱化，Elasticsearch 6.X 中，一个 index 下已经只能包含一个type，Elasticsearch 7.X 中, Type 的概念已经被删除了。
 
@@ -43,7 +43,7 @@ ES 里的 Index 可以看做一个库，而 Types 相当于表，Documents 则�
 
 在 Postman 中，向 ES 服务器发 **PUT** 请求 ：http://127.0.0.1:9200/shopping
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211103233844.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211103233844.png)
 
 ```yaml
 {
@@ -56,7 +56,7 @@ ES 里的 Index 可以看做一个库，而 Types 相当于表，Documents 则�
 
 如果重复添加索引，会返回错误信息：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211103233946.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211103233946.png)
 
 ---
 
@@ -66,7 +66,7 @@ ES 里的 Index 可以看做一个库，而 Types 相当于表，Documents 则�
 
 这里请求路径中的_cat 表示查看的意思，indices 表示索引，所以整体含义就是查看当前 ES服务器中的所有索引，就好像 MySQL 中的 show tables 的感觉，服务器响应结果如下：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211103234806.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211103234806.png)
 
 | 表头           | 含义                                                         |
 | -------------- | ------------------------------------------------------------ |
@@ -89,7 +89,7 @@ ES 里的 Index 可以看做一个库，而 Types 相当于表，Documents 则�
 
 查看索引向 ES 服务器发送的请求路径和创建索引是一致的。但是 HTTP 方法不一致。这里可以体会一下 RESTful 的意义，请求后，服务器响应结果如下：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211103235617.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211103235617.png)
 
 ```yaml
 {
@@ -125,11 +125,11 @@ ES 里的 Index 可以看做一个库，而 Types 相当于表，Documents 则�
 
 在 Postman 中，向 ES 服务器发 **DELETE** 请求 ：http://127.0.0.1:9200/shopping
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211104000508.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211104000508.png)
 
 重新访问索引时，服务器返回响应：**索引不存在**
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211104000537.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211104000537.png)
 
 ---
 
@@ -152,7 +152,7 @@ ES 里的 Index 可以看做一个库，而 Types 相当于表，Documents 则�
 }
 ```
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211104001143.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211104001143.png)
 
 ```yaml
 {
@@ -175,11 +175,11 @@ ES 里的 Index 可以看做一个库，而 Types 相当于表，Documents 则�
 
 此处发送请求的方式必须为 **POST**，不能是 **PUT**，否则会发生错误：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211104001226.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211104001226.png)
 
 如果想要自定义唯一性标识，需要在创建时指定：http://127.0.0.1:9200/shopping/_doc/**1**
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211104001652.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211104001652.png)
 
 此处需要**注意**：如果增加数据时明确数据主键，那么请求方式也可以为 PUT
 
@@ -191,7 +191,7 @@ ES 里的 Index 可以看做一个库，而 Types 相当于表，Documents 则�
 
 在 Postman 中，向 ES 服务器发 **GET** 请求 ：http://127.0.0.1:9200/shopping**/_doc/1**
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211104001942.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211104001942.png)
 
 ```yaml
 {
@@ -217,7 +217,7 @@ ES 里的 Index 可以看做一个库，而 Types 相当于表，Documents 则�
 
 在 Postman 中，向 ES 服务器发 **GET** 请求 ：http://127.0.0.1:9200/shopping**/_search**
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211104234015.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211104234015.png)
 
 ```yaml
 {
@@ -285,13 +285,13 @@ ES 里的 Index 可以看做一个库，而 Types 相当于表，Documents 则�
 
 方式一（url参数）：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211105232008.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211105232008.png)
 
 方式二（请求体）：
 
 match 匹配类型查询，会把查询条件进行分词，然后进行查询，多个词条之间是 or 的关系
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211105232356.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211105232356.png)
 
 ---
 
@@ -301,7 +301,7 @@ multi_match 与 match 类似，不同的是它可以在多个字段中查询。
 
 在 Postman 中，向 ES 服务器发 GET 请求 ：http://127.0.0.1:9200/shopping/_search
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211107165731.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211107165731.png)
 
 ---
 
@@ -353,7 +353,7 @@ term 查询，精确的关键词匹配查询，不对查询条件进行分词。
 
 term 查询，精确的关键词匹配查询，不对查询条件进行分词。（自己试了下，中文好像只能匹配第一个字符）
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211107232317.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211107232317.png)
 
 ---
 
@@ -365,19 +365,19 @@ terms 查询和 term 查询一样，但它允许你指定多值进行匹配。
 
 在 Postman 中，向 ES 服务器发 GET 请求 ：http://127.0.0.1:9200/student/_search
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211107232756.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211107232756.png)
 
 ---
 
 ### 全查询
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211105232726.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211105232726.png)
 
 ---
 
 ### 分页查询
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211105234753.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211105234753.png)
 
 ---
 
@@ -389,7 +389,7 @@ terms 查询和 term 查询一样，但它允许你指定多值进行匹配。
 
 在 Postman 中，向 ES 服务器发 GET 请求 ：http://127.0.0.1:9200/shopping/_search
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211105235105.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211105235105.png)
 
 ---
 
@@ -397,7 +397,7 @@ terms 查询和 term 查询一样，但它允许你指定多值进行匹配。
 
 sort 可以让我们按照不同的字段进行排序，并且通过 order 指定排序的方式。desc 降序，asc升序。
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211105235447.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211105235447.png)
 
 多字段排序：
 
@@ -435,9 +435,9 @@ sort 可以让我们按照不同的字段进行排序，并且通过 order 指�
 
 在 Postman 中，向 ES 服务器发 GET 请求 ：http://127.0.0.1:9200/student/_search
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211107233333.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211107233333.png)
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211107233447.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211107233447.png)
 
 ---
 
@@ -479,7 +479,7 @@ sort 可以让我们按照不同的字段进行排序，并且通过 order 指�
 }
 ```
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211107235435.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211107235435.png)
 
 ---
 
@@ -511,7 +511,7 @@ range 查询找出哪些落在指定区间内的数字或者时间。range 查�
 }
 ```
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211108000012.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211108000012.png)
 
 ---
 
@@ -545,9 +545,9 @@ range 查询找出哪些落在指定区间内的数字或者时间。range 查�
 }
 ```
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211108210224.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211108210224.png)
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211108222458.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211108222458.png)
 
 ---
 
@@ -587,7 +587,7 @@ Elasticsearch 可以对查询内容中的关键字部分，进行标签和样式
 }
 ```
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211108230318.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211108230318.png)
 
 ---
 
@@ -599,27 +599,27 @@ Elasticsearch 可以对查询内容中的关键字部分，进行标签和样式
 
 对某个字段取最大值 max：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211108232818.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211108232818.png)
 
 对某个字段取最小值 min：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211108232914.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211108232914.png)
 
 对某个字段求和 sum：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211108233007.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211108233007.png)
 
 对某个字段取平均值 avg：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211108233156.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211108233156.png)
 
 对某个字段的值进行去重之后再取总数 count：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211108233307.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211108233307.png)
 
 stats 聚合，对某个字段一次性返回 count，max，min，avg 和 sum 五个指标：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211108233515.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211108233515.png)
 
 ---
 
@@ -629,7 +629,7 @@ stats 聚合，对某个字段一次性返回 count，max，min，avg 和 sum �
 
 terms 聚合，分组统计：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211108235019.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211108235019.png)
 
 ---
 
@@ -650,7 +650,7 @@ terms 聚合，分组统计：
 }
 ```
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211104080217.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211104080217.png)
 
 ```yaml
 {
@@ -687,11 +687,11 @@ terms 聚合，分组统计：
 }
 ```
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211105000454.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211105000454.png)
 
 根据唯一性标识，查询文档数据，文档数据已经更新：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211105000517.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211105000517.png)
 
 ---
 
@@ -701,15 +701,15 @@ terms 聚合，分组统计：
 
 在 Postman 中，向 ES 服务器发 **DELETE** 请求 ：http://127.0.0.1:9200/shopping**/_doc/1**
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211105000802.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211105000802.png)
 
 删除后再查询当前文档信息：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211105000842.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211105000842.png)
 
 如果删除一个并不存在的文档：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211105000812.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211105000812.png)
 
 ---
 
@@ -731,7 +731,7 @@ terms 聚合，分组统计：
 }
 ```
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211105223604.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211105223604.png)
 
 ```yaml
 {
@@ -790,7 +790,7 @@ terms 聚合，分组统计：
 }
 ```
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211107132225.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211107132225.png)
 
 映射数据说明：
 
@@ -825,7 +825,7 @@ terms 聚合，分组统计：
 
 在 Postman 中，向 ES 服务器发 **GET** 请求 ：http://127.0.0.1:9200/student**/_mapping**
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211107160909.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211107160909.png)
 
 ---
 
@@ -859,7 +859,7 @@ terms 聚合，分组统计：
  }
 ```
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211107161507.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211107161507.png)
 
 索引需为新建索引，否则会报如下错误：
 

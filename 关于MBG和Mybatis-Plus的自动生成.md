@@ -5,8 +5,8 @@ categories:
 tags:
   - Mybatis
   - Mybatis-Plus
-top_img: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp6.jpg'
-cover: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp6.jpg'
+top_img: 'https://npm.elemecdn.com/nan-picture/img/wp6.jpg'
+cover: 'https://npm.elemecdn.com/nan-picture/img/wp6.jpg'
 abbrlink: 6e4f
 date: 2021-01-27 23:45:21
 updated: 2021-01-27 23:45:33
@@ -129,7 +129,7 @@ pom中配置<configurationFile>的路径下的MBG配置文件（根据需求修�
 
 最后在IDEA的右边栏中选中Maven，执行相应插件：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20210127234326.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20210127234326.png)
 
 ---
 

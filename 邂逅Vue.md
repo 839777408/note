@@ -4,8 +4,8 @@ tags:
   - Vue
 categories:
   - Vue
-top_img: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp3.jpg'
-cover: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp3.jpg'
+top_img: 'https://npm.elemecdn.com/nan-picture/img/wp3.jpg'
+cover: 'https://npm.elemecdn.com/nan-picture/img/wp3.jpg'
 abbrlink: a5b0
 date: 2020-10-12 16:41:39
 updated: 2020-10-12 16:41:46
@@ -112,7 +112,7 @@ updated: 2020-10-12 16:41:46
 也就是说，当我们数组中的数据发生改变时，界面会自动改变。
 打开开发者模式的console试一下
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201011173203.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201011173203.png)
 
 
 
@@ -154,13 +154,13 @@ updated: 2020-10-12 16:41:46
 </html>
 ```
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201011173424.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201011173424.png)
 
 
 
 # Vue中的MVVM
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201011175627.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201011175627.png)
 
 - View层：
   视图层
@@ -203,5 +203,5 @@ updated: 2020-10-12 16:41:46
 
 # Vue的生命周期
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201011182227.png)
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201011182212.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201011182227.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201011182212.png)

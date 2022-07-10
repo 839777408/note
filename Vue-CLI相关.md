@@ -4,8 +4,8 @@ tags:
   - Vue CLI
 categories:
   - Vue
-top_img: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp8.jpg'
-cover: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp8.jpg'
+top_img: 'https://npm.elemecdn.com/nan-picture/img/wp8.jpg'
+cover: 'https://npm.elemecdn.com/nan-picture/img/wp8.jpg'
 abbrlink: a9f7
 date: 2020-11-09 01:29:03
 updated: 2020-11-09 01:29:08
@@ -54,26 +54,26 @@ updated: 2020-11-09 01:29:08
 
 ## 创建旧版本的2.x模板
 
-上面安装的是Vue CLI 4.x的版本，如果需要想按照Vue CLI2的方式初始化项目时不可以的。![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201107212311.png)
+上面安装的是Vue CLI 4.x的版本，如果需要想按照Vue CLI2的方式初始化项目时不可以的。![](https://npm.elemecdn.com/nan-picture/blog/20201107212311.png)
 
 - Vue CLI2创建项目命令：
   	`vue init webpack my-project`
 - Vue CLI>=3创建项目命令：
   	`vue create my-project`
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201107212603.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201107212603.png)
 
 
 
 ## 目录结构详解
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201107213239.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201107213239.png)
 
 
 
 ## Vue程序运行过程
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201108030136.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201108030136.png)
 
 
 
@@ -91,7 +91,7 @@ updated: 2020-11-09 01:29:08
 
 ---
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201108032301.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201108032301.png)
 
 两种模式生成的区别只有在 main.js 中，其他都是一样的：
 
@@ -132,7 +132,7 @@ updated: 2020-11-09 01:29:08
 
 **类型**：`(createElement: () => VNode) => VNode`
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215027.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20220706215027.png)
 
 Vue 选项中的 `render` 函数若存在，则 Vue 构造函数不会从 `template` 选项或通过 `el` 选项指定的挂载元素中提取出的 HTML 模板编译渲染函数。
 
@@ -140,19 +140,19 @@ Vue 选项中的 `render` 函数若存在，则 Vue 构造函数不会从 `templ
 
 ## npm run build
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201108233918.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201108233918.png)
 
 
 
 ## npm run dev
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201108233949.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201108233949.png)
 
 
 
 ## 修改配置：webpack.base.conf.js起别名
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201108234123.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201108234123.png)
 
 这样起别名后，在引用文件的路径上可以用别名代替，例如：
 
@@ -178,11 +178,11 @@ vue-cli 3 与 2 版本有很大区别：
 创建项目命令：
 	`vue create my-project`
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201108234604.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201108234604.png)
 
 ## 目录结构详解
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201108234638.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201108234638.png)
 
 
 
@@ -190,13 +190,13 @@ vue-cli 3 与 2 版本有很大区别：
 
 - 通过图形化界面进行vue的配置和管理，启动配置服务器的命令：`vue ui`
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201109012242.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201109012242.png)
 
 
 
 - 可以看到目录结构与2的相比少了配置目录，也就是没了build和config，配置文件都到了@vue模块里：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215028.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20220706215028.png)
 
 - 可以自定义vue.config.js
 
@@ -204,7 +204,7 @@ vue-cli 3 与 2 版本有很大区别：
 
 ## 自定义配置：起别名
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201109012627.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201109012627.png)
 
 
 

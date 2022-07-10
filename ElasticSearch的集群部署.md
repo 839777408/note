@@ -4,8 +4,8 @@ categories:
   - ElasticSearch
 tags:
   - ElasticSearch
-top_img: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp3.jpg'
-cover: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp3.jpg'
+top_img: 'https://npm.elemecdn.com/nan-picture/img/wp3.jpg'
+cover: 'https://npm.elemecdn.com/nan-picture/img/wp3.jpg'
 abbrlink: 36216
 date: 2021-11-19 22:14:16
 updated: 2021-11-22 23:17:23
@@ -160,7 +160,7 @@ http.cors.allow-origin: "*"
 
 查看集群状态：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211120232055.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211120232055.png)
 
 > status 字段指示着当前集群在总体上是否工作正常。它的三种颜色含义如下：
 >
@@ -170,11 +170,11 @@ http.cors.allow-origin: "*"
 
 向集群中的 node-1001 节点增加索引：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211120232533.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211120232533.png)
 
 向集群中的 node-1002 节点查询索引：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20211120232647.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20211120232647.png)
 
 ---
 

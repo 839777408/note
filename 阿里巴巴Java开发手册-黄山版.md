@@ -4,8 +4,8 @@ categories:
   - 总结
 tags:
   - 总结
-top_img: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp10.jpg'
-cover: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp10.jpg'
+top_img: 'https://npm.elemecdn.com/nan-picture/img/wp10.jpg'
+cover: 'https://npm.elemecdn.com/nan-picture/img/wp10.jpg'
 copyright:  false
 abbrlink: 26689
 date: 2022-06-01 23:50:31

@@ -2,8 +2,8 @@
 title: web安全
 tags: web安全
 categories: 网络安全
-top_img: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp1.jpg'
-cover: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp1.jpg'
+top_img: 'https://npm.elemecdn.com/nan-picture/img/wp1.jpg'
+cover: 'https://npm.elemecdn.com/nan-picture/img/wp1.jpg'
 abbrlink: 4b61
 date: 2020-07-22 16:00:00
 updated: 2020-07-22 16:00:00
@@ -118,11 +118,11 @@ Mysql 有三种常用注释符：
 >
 >2.在链接后面添加语句【union select 1,2,3,4,5,6,7,8,9,10,11 from admin（表名）】，进行联合查询，来暴露可查询的字段编号。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214929.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214929.png)
 >
 >3.在链接后面添加语句【union select 1,admin,password,4,5,6,7,8,9,10,11 from admin】，即可暴出管理员用户名和密码。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214853.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214853.png)
 
 
 
@@ -158,37 +158,37 @@ Mysql 有三种常用注释符：
 
 >1.提示输入User ID，输入正确的ID，将显示 ID First name（名），Surname（姓）信息。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214908.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214908.png)
 >
 >2.尝试输入’，返回错误，可以得知此处为注入点。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214916.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214916.png)
 >
 >3.尝试输入：`1 or 1=1`,想要遍历数据库表，并没有达成目的，猜测程序将此处看成了**字符型**。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214858.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214858.png)
 >
 >4.尝试输入：`1’ or’ 1’=’1`后遍历出了数据库中的所有内容。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214932.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214932.png)
 >
 >5.利用order by num语句来测试数据表有多少个字段。（--加空格）表示注释掉sql语句末尾的单引号。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214851.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214851.png)
 >
 >6.当输入3是，页面报错。页面错误信息如下，Unknown column ‘3’ in ‘order clause’，由此我们判断查询结果值为2列。
 >
 >7.注入：``1' and 1=2 union select 1,2 --`由图得知，First name处显示为查询结果第一列的值，Surname处显示为查询结果第二列的值。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214857.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214857.png)
 >
 >8.通过注入：`1' and 1=2 union select user(),database() --`得到数据库用户以及数据库名称。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214919.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214919.png)
 >
 >9.通过注入：`1' and 1=2 union select version(),database() -- `得到数据库版本信息。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214930.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214930.png)
 >
 >10.通过注入：
 >
@@ -198,27 +198,27 @@ Mysql 有三种常用注释符：
 >
 >获得操作系统信息。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214936.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214936.png)
 >
 >11.通过注入：`1' and 1=2 union select 1,schema_name from information_schema.schemata -- `查询所有数据库名字。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214855.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214855.png)
 >
 >12.通过注入：`1' and exists(select * from 表名) --`猜解dvwa数据库中的表名。测试表名为users。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214903.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214903.png)
 >
 >13.猜解字段名：`1' and exists(select 表名 from users) --`,测试的字段名为first_name,last_name。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214856.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214856.png)
 >
 >14.爆出数据库中字段的内容`1' and 1=2 union select first_name,last_name from users --`,这里其实如果是存放管理员账户的表，那么用户名，密码信息字段就可以爆出来了。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214935.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214935.png)
 
 **源码分析：**
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214904.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20220706214904.png)
 
 >通过代码可以看出，对输入$id的值没有进行任何过滤就直接放入了SQL语句中进行处理，这样带来了极大的隐患。
 
@@ -226,7 +226,7 @@ Mysql 有三种常用注释符：
 
 **源码分析：**
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214937.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20220706214937.png)
 
 >通过源代码可以看出，在中等级别时对输入的$id的值使用mysql_real_eascape_string()函数进行了处理。在PHP中，使用mysql_real_escape_string()函数用来转义SQL语句中使用字符串的特殊字符。但是使用这个函数对参数进行转换是存在绕过的。只需要将攻击字符进行转换一下编码格式即可绕过该防护函数。比如使用url编码等方式。同时发现SQL语句中变成了“WHERE user_id = $id”，此处变成了**数字型**注入，所以此处使用mysql_real_escape_string()函数并没有起到防护的作用。可以通过类似于“1 or 1= 1”的语句来进行注入。
 
@@ -234,7 +234,7 @@ Mysql 有三种常用注释符：
 
 **源码分析：**
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214927.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20220706214927.png)
 
 >从源代码中可以看出，此处认为**字符型**注入。对传入$id的值使用stripslashes()函数处理以后，在经过到$mysql_real_escape_string()函数进行第二次过滤。在默认情况下，PHP会对所有的GET，POST和cookie数据自动运行addslashes()，adslashers()函数返回在预定义字符之前添加反斜杠的字符串。就是将“’”变成“\’”，Stripslashes()函数则是删除由addslashes()函数添加的反斜杠。在使用两个函数进行过滤之后再使用is_numric()函数检查$id的值是否为数字，彻底断绝了注入的存在。此种防护不存在绕过的可能。
 
@@ -254,23 +254,23 @@ Mysql 有三种常用注释符：
 
 >1.注册一个用户。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215643.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706215643.png)
 >
 >2.来到“添加物品”处。此处是存在存储型XSS的。添加以下信息，点击“提交”。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215644.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706215644.png)
 >
 >3.点击“首页”，看到刚才添加的物品信息，点击打开。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215649.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706215649.png)
 >
 >4.弹出信息。说明漏洞存在。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215645.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706215645.png)
 >
 >5.再次编辑“添加物品”处提交的内容，其中“物品简介”项的内容如下：
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215646.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706215646.png)
 >
 >```javascript
 ><script type="text/javascript">
@@ -304,13 +304,13 @@ Mysql 有三种常用注释符：
 >
 >7.输入后台路径`【http://192.168.1.3:8007/admin/user.asp】`使用【admin/admin888】，登录后台。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215647.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706215647.png)
 >
 >8.此时回到首页，浏览器输入：`http://192.168.1.3:8007`，查看帖子rty，点击了此条物品消息，没有什么异常现象。
 >
 >9.此时管理员再次进入自己的后台：`【http://192.168.1.3:8007/admin/user.asp】`在“系统用户管理”中，发现多了一个账户zhangsan。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215648.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706215648.png)
 
 
 
@@ -322,25 +322,25 @@ Mysql 有三种常用注释符：
 >
 >2.在交互页面提交请求，进行尝试输入不同的内容，寻找XSS漏洞存在的点。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214912.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214912.png)
 >
 >3.交互界面返回信息。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214910.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214910.png)
 >
 >4.经过页面提交留言测试，发现留言标题文本框对输入的文字长度进行了限制,所以,我们的这一次尝试是失败的，我们需要调整XSS代码以绕过防护。
 >
 >5.这里使用注释的方式绕过代码对长度的限制。对交互页面进行输入恶意代码。我们先尝试提交`*/</script>`点击提交。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706215650.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706215650.png)
 >
 >6.显示提交成功，我们继续提交下一段代码`<script>alert(/xss/)/*`来配合上一段代码执行。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214900.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214900.png)
 >
 >7.当管理员进入管理后台，进入留言管理，会触发用户输入的恶意代码，成功弹窗。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214859.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214859.png)
 >
 >8.后台页面源代码里显示`<script>alert(/xss/)/*其他标签和内容``*/</script>`
 
@@ -433,19 +433,19 @@ Mysql 有三种常用注释符：
 >
 > 2.将木马文件【1.asp】改成【1.jpg】，点击上传。
 >
-> ![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214917.png)
+> ![](https://npm.elemecdn.com/nan-picture/blog/20220706214917.png)
 >
 > 3.打开【系统管理】下的【数据库备份】，即可进入数据库备份页面，并将刚刚得到的木马文件的路径复制到当前数据库路径中，填写数据库备份名称【ok.asp】。
 >
-> ![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214934.png)
+> ![](https://npm.elemecdn.com/nan-picture/blog/20220706214934.png)
 >
 > 4.点击【确定】，即可得到数据库备份的路径【admin\Databackup\ok.asp.asa】。
 >
-> ![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214852.png)
+> ![](https://npm.elemecdn.com/nan-picture/blog/20220706214852.png)
 >
 > 5.在火狐浏览器的地址栏中输入完整路径【`http://192.168.1.3:8002/admin/Databackup/ok.asp`】，即可访问木马，已经成功拿到webshell（密码：123456）。
 >
-> ![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214933.png)
+> ![](https://npm.elemecdn.com/nan-picture/blog/20220706214933.png)
 
 
 
@@ -465,17 +465,17 @@ Mysql 有三种常用注释符：
 
 > 1.打开网站(`http://192.168.1.3:8001/fckeditor`)判断是否有fckeditor编辑器，出现403禁止访问，说明此目录存在。
 >
-> ![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214914.png)
+> ![](https://npm.elemecdn.com/nan-picture/blog/20220706214914.png)
 >
 > 2.判断fckeditor编辑器版本号，输入：`http://192.168.1.3:8001/FCKeditor/_whatsnew.html`，由返回页面可知此fckeditor编辑器版本为2.0。
 >
-> ![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214931.png)
+> ![](https://npm.elemecdn.com/nan-picture/blog/20220706214931.png)
 >
 > 3.打开`http://192.168.1.3:8001/FCKeditor/editor/filemanager/browser/default/browser.html?type=Image&connector=connectors/asp/connector.asp`
 >
 > 4.经测试jpg后缀文件可上传，asp后缀文件被拦截。所以我们把文件重命名为2.asp.jpg。并利用00截断上传shell。
 >
-> ![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214913.png)
+> ![](https://npm.elemecdn.com/nan-picture/blog/20220706214913.png)
 
 
 
@@ -495,21 +495,21 @@ Mysql 有三种常用注释符：
 
 >1.在浏览器中输入http://192.168.1.3:8000/webshell.asp，输入默认密码（123456）。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214906.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214906.png)
 >
 >2.单击“执行—CMD”, 在右侧中选上复选框“wscript.shell”在输入空中输入命令“netstat -an”,单击执行按钮。利用webshell读取服务器信息，发现服务器系统安装server-u服务,默认端口号**43958**。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214911.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214911.png)
 >
 >3.单击“Servu-提权”按钮，在命令栏中输入“cmd /c net user aaa 123456 /add & net localgroup administrators aaa /add”，单击提交按钮。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214854.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214854.png)
 >
 >4.单击“用户——帐号”选项，显示用户aaa已成功添加到系统。
 >
 >5.单击“开始”->“运行“->输入”cmd”，在命令行下输入“mstsc”。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214922.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214922.png)
 >
 >6.输入新添加的账号aaa，输入密码“123456”，单击确定，远程连接到目标主机。
 
@@ -529,33 +529,33 @@ Mysql 有三种常用注释符：
 
 >1. 在浏览器中输入http://192.168.1.3:8000/2.asp ，输入默认密码（123456）。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214901.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214901.png)
 >
 >2. 单击“端口扫描”->“开始扫描”, 发现**1433**端口开放，安装有mssql数据库。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214918.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214918.png)
 >
 >3. 单击“数据库操作”，在右侧下拉列表mssql连接，输入相应的数据库名称master，密码123456。
 >
 >  在SQL操作命令中输入“select count(*) from master.dbo.sysobjects where xtype = ‘x’ and name = ‘xp_cmdshell’”，查看cmd_shell是否开启。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214925.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214925.png)
 >
 >4. 命令回显为1，cmd_shell为开启。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214909.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214909.png)
 >
 >5. 添加系统账号,在SQL操作命令中输入“Exec master.dbo.xp_cmdshell ‘net user hacker 123456 /add’”，没有回显表示命令成功。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214905.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214905.png)
 >
 >6. 在SQL操作命令中输入” Exec master.dbo.xp_cmdshell ‘net localgroup administrators hacker /add’ “将hacker加入管理员组。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214926.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214926.png)
 >
 >7. 单击”scan”按钮，查看端口号。发现3389端口开启着。 *3389*是远程协助的端口。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214907.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214907.png)
 >
 >8.  单击“开始”—>“运行”—>输入“mstsc”,用新加的用户hacker（账号hacker 密码123456）连接服务器（192.168.1.3）远程桌面。
 
@@ -573,33 +573,33 @@ Mysql 有三种常用注释符：
 
 >1.在浏览器中输入http://192.168.1.3:8080/webshell.php ，输入默认密码（admin）。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214902.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214902.png)
 >
 >2.单击“端口扫描”->“开始扫描”, 发现**3306**端口开放，安装有Mysql数据库。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214915.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214915.png)
 >
 >3.利用Mysql_udf提权，单击“mysql-udf提权”，在右侧输入已知的数据库连接用户名和密码（root:123456）,然后单击MYSQL连接即可。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214921.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214921.png)
 >
 >4.单击“安装DLL”按钮。
 >
 >5.在下拉列表框中选择”添加管理员”,单击”执行”按钮。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214924.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214924.png)
 >
 >6.在下拉列表框中选择”设为管理组”,单击”执行”按钮并加入管理员组。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214928.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214928.png)
 >
 >7.选择菜单栏中的“CMD命令”，下拉列表框中选择“net user”,然后单击“执行按钮”。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214923.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214923.png)
 >
 >8.选择菜单栏中的“CMD命令”，下拉列表框中选择“netstat -an”,然后单击“执行按钮”。
 >
->![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20220706214920.png)
+>![](https://npm.elemecdn.com/nan-picture/blog/20220706214920.png)
 >
 >9.单击开始—>运行—>输入“mstsc”—>”192.168.1.3”,用新加的用户spider密码spider连接服务器远程桌面。
 

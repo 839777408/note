@@ -4,8 +4,8 @@ tags:
   - 组件化
 categories:
   - Vue
-top_img: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp5.jpg'
-cover: 'https://npm.elemecdn.com/nan-picture@1.0.0/img/wp5.jpg'
+top_img: 'https://npm.elemecdn.com/nan-picture/img/wp5.jpg'
+cover: 'https://npm.elemecdn.com/nan-picture/img/wp5.jpg'
 abbrlink: '7098'
 date: 2020-10-30 11:23:42
 updated: 2020-10-30 11:23:48
@@ -24,7 +24,7 @@ updated: 2020-10-30 11:23:48
   - 如果我们将一个页面中所有的处理逻辑全部放在一起，处理起来就会变得非常复杂，而且不利于后续的管理以及扩展。
   - 但如果我们将一个页面拆分成一个个小的功能块，每个功能块完成属于自己这部分独立的功能，那么之后整个页面的管理和维护就变得非常容易了。
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201025155124.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201025155124.png)
 
 ## Vue组件化思想
 
@@ -32,7 +32,7 @@ updated: 2020-10-30 11:23:48
 
 任何的应用都会被抽象成一颗**组件树**。
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201025155348.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201025155348.png)
 
 组件化思想的应用：
 
@@ -52,7 +52,7 @@ updated: 2020-10-30 11:23:48
 2. 注册组件
 3. 使用组件
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201025160121.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201025160121.png)
 
 ```html
 <div id="app">
@@ -110,7 +110,7 @@ updated: 2020-10-30 11:23:48
 
 ​        如下图所示，使用了三次`<my-cpn></my-cpn>`，而第三次其实并没有生效：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201025160745.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201025160745.png)
 
 # 全局组件和局部组件
 
@@ -435,7 +435,7 @@ Vue提供了两种方案来定义HTML模块内容：
 
 - 子组件通过事件向父组件发送消息
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201027105959.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201027105959.png)
 
 
 
@@ -523,8 +523,8 @@ props的值有两种方式：
 
 当我们有自定义构造函数时，验证也支持自定义的类型
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201028171445.png)
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201028165717.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201028171445.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201028165717.png)
 
 
 
@@ -649,7 +649,7 @@ props用于父组件向子组件传递数据，还有一种比较常见的是子
 
 点击按钮后的运行结果：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201029005840.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201029005840.png)
 
 ## 父组件访问子组件的方式： $refs
 
@@ -798,7 +798,7 @@ slot翻译为插槽：
 
 移动开发中，几乎每个页面都有导航栏。导航栏我们必然会封装成一个插件，比如nav-bar组件。一旦有了这个组件，我们就可以在多个页面中复用了。但是，每个页面的导航是一样的吗？No，以京东M站为例：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201029175544.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201029175544.png)
 
 ---
 
@@ -855,7 +855,7 @@ slot翻译为插槽：
 
 页面如下：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201029180534.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201029180534.png)
 
 ## 具名插槽
 
@@ -908,7 +908,7 @@ slot翻译为插槽：
 
 页面如下：
 
-![](https://npm.elemecdn.com/nan-picture@1.0.0/blog/20201030094511.png)
+![](https://npm.elemecdn.com/nan-picture/blog/20201030094511.png)
 
 
 

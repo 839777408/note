@@ -6,8 +6,8 @@ categories:
 tags:
   - HttpClient
 copyright: false
-top_img: 'https://npm.elemecdn.com/nan-picture/img/wp8.jpg'
-cover: 'https://npm.elemecdn.com/nan-picture/img/wp8.jpg'
+top_img: 'https://unpkg.com/nan-picture/img/wp8.jpg'
+cover: 'https://unpkg.com/nan-picture/img/wp8.jpg'
 abbrlink: 983b
 date: 2021-06-06 22:30:52
 updated: 2021-6-24 23:44:48

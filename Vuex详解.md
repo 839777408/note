@@ -5,8 +5,8 @@ tags:
   - Promise
 categories:
   - Vue
-top_img: 'https://npm.elemecdn.com/nan-picture/img/wp10.jpg'
-cover: 'https://npm.elemecdn.com/nan-picture/img/wp10.jpg'
+top_img: 'https://unpkg.com/nan-picture/img/wp10.jpg'
+cover: 'https://unpkg.com/nan-picture/img/wp10.jpg'
 abbrlink: 19dc
 date: 2020-11-16 00:47:48
 updated: 2020-11-16 00:47:56
@@ -152,7 +152,7 @@ Vuex 也集成到 Vue 的官方调试工具 **devtools extension**，提供了�
 
 ## 单界面的状态管理
 
-![](https://npm.elemecdn.com/nan-picture/blog/20201115061526.png)
+![](https://unpkg.com/nan-picture/blog/20201115061526.png)
 
 - State：我们的状态。（姑且可以当做就是data中的属性）
 - View：视图层，可以针对State的变化显示不同的信息。
@@ -184,7 +184,7 @@ Vuex 也集成到 Vue 的官方调试工具 **devtools extension**，提供了�
 
 ## Vuex状态管理图例
 
-![](https://npm.elemecdn.com/nan-picture/blog/20201115063220.png)
+![](https://unpkg.com/nan-picture/blog/20201115063220.png)
 
 
 
@@ -535,11 +535,11 @@ const store = new Vuex.Store({
 
 比如我们之前的代码，当执行更新时，devtools中会有如下信息：
 
-![](https://npm.elemecdn.com/nan-picture/blog/20201115214308.png)
+![](https://unpkg.com/nan-picture/blog/20201115214308.png)
 
 但是，如果Vuex中的代码，我们使用了异步函数：
 
-![](https://npm.elemecdn.com/nan-picture/blog/20201115214502.png)
+![](https://unpkg.com/nan-picture/blog/20201115214502.png)
 
 你会发现state中的info数据一直没有被改变，因为它无法被追踪到。所以通常情况下，不要在mutations中进行异步的操作。
 
@@ -585,13 +585,13 @@ context是一个和store对象具有相同方法和属性的对象。
 
 在Vue组件中，如果我们调用action中的方法，那么就需要使用**dispatch**。同样的，也是支持传递payload的。
 
-![](https://npm.elemecdn.com/nan-picture/blog/20201115215703.png)
+![](https://unpkg.com/nan-picture/blog/20201115215703.png)
 
 ---
 
 在Action中，我们可以将异步操作放在一个Promise中，并且在成功或者失败后，调用对应的resolve或reject。
 
-![](https://npm.elemecdn.com/nan-picture/blog/20201115222745.png)
+![](https://unpkg.com/nan-picture/blog/20201115222745.png)
 
 
 
@@ -663,13 +663,13 @@ const moduleA = {
 
 而`{ state, commit, rootState }`其实就是该模块的context对象的解构（ES6），也可直接用context：
 
-![](https://npm.elemecdn.com/nan-picture/blog/20201116003657.png)
+![](https://unpkg.com/nan-picture/blog/20201116003657.png)
 
-![](https://npm.elemecdn.com/nan-picture/blog/20201116004418.png)
+![](https://unpkg.com/nan-picture/blog/20201116004418.png)
 
 数组也可以解构：
 
-![](https://npm.elemecdn.com/nan-picture/blog/20201116091310.png)
+![](https://unpkg.com/nan-picture/blog/20201116091310.png)
 
 ```js
 const moduleA = {

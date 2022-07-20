@@ -4,8 +4,8 @@ tags:
   - Java
 categories:
   - 总结
-top_img: 'https://npm.elemecdn.com/nan-picture/img/wp8.jpg'
-cover: 'https://npm.elemecdn.com/nan-picture/img/wp8.jpg'
+top_img: 'https://unpkg.com/nan-picture/img/wp8.jpg'
+cover: 'https://unpkg.com/nan-picture/img/wp8.jpg'
 abbrlink: 932b
 date: 2020-09-01 23:45:32
 updated: 2020-09-01 23:45:32

@@ -4,8 +4,8 @@ categories:
   - Docker
 tags:
   - Docker
-top_img: 'https://npm.elemecdn.com/nan-picture/img/wp9.jpg'
-cover: 'https://npm.elemecdn.com/nan-picture/img/wp9.jpg'
+top_img: 'https://unpkg.com/nan-picture/img/wp9.jpg'
+cover: 'https://unpkg.com/nan-picture/img/wp9.jpg'
 abbrlink: f978
 date: 2021-06-13 16:48:26
 updated: 2021-6-24 21:19:14
@@ -33,7 +33,7 @@ bootfs(boot file system)主要包含bootloader和kernel， bootloader主要是�
 
 rootfs (root file system) ，在bootfs之上。包含的就是典型 Linux 系统中的 /dev, /proc, /bin, /etc 等标准目录和文件。rootfs就是各种不同的操作系统发行版，比如Ubuntu，Centos等等。 
 
-![](https://npm.elemecdn.com/nan-picture/blog/20220706215036.png)
+![](https://unpkg.com/nan-picture/blog/20220706215036.png)
 
 >* **平时我们安装进虚拟机的CentOS都是好几个G，为什么docker里才200M？**
 >
@@ -57,21 +57,21 @@ rootfs (root file system) ，在bootfs之上。包含的就是典型 Linux 系�
 
 所有的 Docker镜像都起始于一个基础镜像层，当进行修改或添加新的内容时，就会在当前镜像层之上，创建新的镜像层。
 
-![](https://npm.elemecdn.com/nan-picture/blog/20210626120405.png)
+![](https://unpkg.com/nan-picture/blog/20210626120405.png)
 
 ---
 
 举一个简单的例子，假如基于 Ubuntu Linux16.04创建一个新的镜像，这就是新镜像的第一层；如果在该镜像中添加 Python包，就会在基础镜像层之上创建第二个镜像层；如果继续添加一个安全补丁，就会创健第三个镜像层。该镜像当前已经包含3个镜像层，如下图所示（这只是一个用于演示的很简单的例子）。
 
-![](https://npm.elemecdn.com/nan-picture/blog/20210614183917.png)
+![](https://unpkg.com/nan-picture/blog/20210614183917.png)
 
 在添加额外的镜像层的同时，镜像始终保持是当前所有镜像的组合，理解这一点非常重要。下图中举了一个简单的例子，每个镜像层包含3个文件，而镜像包含了来自两个镜像层的6个文件。
 
-![](https://npm.elemecdn.com/nan-picture/blog/20210614231012.png)
+![](https://unpkg.com/nan-picture/blog/20210614231012.png)
 
 下图中展示了一个稍微复杂的三层镜像，在外部看来整个镜像只有6个文件，这是因为最上层中的文件7是文件5的一个更新版。
 
-![](https://npm.elemecdn.com/nan-picture/blog/20210614232723.png)
+![](https://unpkg.com/nan-picture/blog/20210614232723.png)
 
 这种情況下，上层镜像层中的文件覆盖了底层镜像层中的文件。这样就使得文件的更新版本作为一个新
 
@@ -85,7 +85,7 @@ Docker在 Windows上仅支持 windowsfilter 一种存储引擎，该引擎基于
 
 下图展示了与系统显示相同的三层镜像。所有镜像层堆并合并，对外提供统一的视图：
 
-![](https://npm.elemecdn.com/nan-picture/blog/20210614232815.png)
+![](https://unpkg.com/nan-picture/blog/20210614232815.png)
 
 ---
 

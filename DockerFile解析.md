@@ -5,8 +5,8 @@ categories:
 tags:
   - Docker
   - DockerFile
-top_img: 'https://npm.elemecdn.com/nan-picture/img/wp10.jpg'
-cover: 'https://npm.elemecdn.com/nan-picture/img/wp10.jpg'
+top_img: 'https://unpkg.com/nan-picture/img/wp10.jpg'
+cover: 'https://unpkg.com/nan-picture/img/wp10.jpg'
 abbrlink: e53
 date: 2021-06-26 00:25:59
 updated: 2022-3-17 00:08:55
@@ -64,7 +64,7 @@ CMD ["/bin/bash"]
 
 ---
 
-![](https://npm.elemecdn.com/nan-picture/blog/20210626120726.png)
+![](https://unpkg.com/nan-picture/blog/20210626120726.png)
 
 从应用软件的角度来看，Dockerfile、Docker镜像与Docker容器分别代表软件的三个不同阶段：
 
@@ -101,7 +101,7 @@ Dockerfile面向开发，Docker镜像成为交付标准，Docker容器则涉及�
 | ENTRYPOINT | 指定这个容器启动的时候要运行的命令，可以追加命令 。ENTRYPOINT的目的和CMD一样，都是在指定容器启动程序及参数 |
 | ONBUILD    | 当构建一个被继承的Dockerfile时运行命令，父镜像在被子继承后父镜像的onbuild被触发 |
 
-![](https://npm.elemecdn.com/nan-picture/blog/20210905171117.png)
+![](https://unpkg.com/nan-picture/blog/20210905171117.png)
 
 ---
 
@@ -457,7 +457,7 @@ $ sudo docker pull registry.cn-shenzhen.aliyuncs.com/nanzx/mytomcat:[镜像版�
 
 
 
-![](https://npm.elemecdn.com/nan-picture/blog/20220706215002.png)
+![](https://unpkg.com/nan-picture/blog/20220706215002.png)
 
 ---
 
@@ -539,7 +539,7 @@ docker run -d
 
 # 总结
 
-![](https://npm.elemecdn.com/nan-picture/blog/20210905223219.png)
+![](https://unpkg.com/nan-picture/blog/20210905223219.png)
 
 ---
 

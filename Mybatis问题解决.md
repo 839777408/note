@@ -4,8 +4,8 @@ tags:
   - null
 categories:
   - Mybatis
-top_img: 'https://unpkg.com/nan-picture/img/wp2.jpg'
-cover: 'https://unpkg.com/nan-picture/img/wp2.jpg'
+top_img: 'https://cdn.jsdelivr.net/npm/nan-picture/img/wp2.jpg'
+cover: 'https://cdn.jsdelivr.net/npm/nan-picture/img/wp2.jpg'
 abbrlink: d428
 date: 2020-12-26 22:45:30
 updated: 2021-2-21 23:18:59
@@ -113,7 +113,7 @@ logging:
 
 # 非法参数异常： argument type mismatch
 
-![](https://unpkg.com/nan-picture/blog/20210127232544.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20210127232544.png)
 
 我的Dao层：
 

@@ -4,8 +4,8 @@ categories:
   - Kafka
 tags:
   - Kafka
-top_img: 'https://unpkg.com/nan-picture/img/wp7.jpg'
-cover: 'https://unpkg.com/nan-picture/img/wp7.jpg'
+top_img: 'https://cdn.jsdelivr.net/npm/nan-picture/img/wp7.jpg'
+cover: 'https://cdn.jsdelivr.net/npm/nan-picture/img/wp7.jpg'
 abbrlink: 13749
 date: 2022-02-25 18:09:36
 updated: 2022-3-19 23:56:42
@@ -36,18 +36,18 @@ Kafka最新定义： Kafka是一个开源的**分布式事件流平台**（Event
 - 点对点模式（一个生产者，一个消费者）
   - 消费者主动拉取数据，消息收到后清除消息
 
-![](https://unpkg.com/nan-picture/blog/20220225185206.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220225185206.png)
 
 - 发布订阅模式（一个生产者，多个消费者）
   - 可以有多个topic主题（浏览、点赞、收藏、评论等）
   - 消费者消费数据之后，不删除数据
   - 每个消费者相互独立，都可以消费到数据
 
-![](https://unpkg.com/nan-picture/blog/20220225185325.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220225185325.png)
 
 ## 基础架构
 
-![](https://unpkg.com/nan-picture/blog/20220226105508.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220226105508.png)
 
 - Broker：代理；一台Kafka服务器就是一个broker。一个集群由多个broker组成。一个broker可以容纳多个 topic。 
 - Topic：主题；可以理解为一个队列，**生产者和消费者面向的都是一个topic**。
@@ -276,7 +276,7 @@ nanzx.top
 
 在消息发送的过程中，涉及到了两个线程：**main 线程和 sender 线程**。在 main 线程中创建了一个**双端队列 RecordAccumulator**（默认 32 m，由内存池分配空间）。main 线程将消息发送给 RecordAccumulator，sender 线程不断从 RecordAccumulator 中拉取消息发送到 Kafka Broker。
 
-![](https://unpkg.com/nan-picture/blog/20220226192238.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220226192238.png)
 
 **main线程：**
 
@@ -320,7 +320,7 @@ nanzx.top
 
 异步发送指的是外部数据发送到双端队列 RecordAccumulator，不需要等待前一批数据成功发送到kafka后才发送。
 
-![](https://unpkg.com/nan-picture/blog/20220226192238.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220226192238.png)
 
 引入kafka相关依赖：
 
@@ -527,19 +527,19 @@ public ProducerRecord(String topic, V value)
 
 **acks=0**，生产者发送过来数据就不管了：
 
-![](https://unpkg.com/nan-picture/blog/20220301223217.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220301223217.png)
 
 ---
 
 **acks=1**，生产者发送过来数据Leader应答：
 
-![](https://unpkg.com/nan-picture/blog/20220301223231.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220301223231.png)
 
 ---
 
 **acks=-1（all）**，生产者发送过来数据Leader和ISR队列里面所有Follwer应答：
 
-![](https://unpkg.com/nan-picture/blog/20220301223931.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220301223931.png)
 
 **思考**：Leader收到数据，所有Follower都开始同步数据，但有一个Follower，因为某种故障，迟迟不能与Leader进行同步，那这个问题怎么解决呢？
 
@@ -569,7 +569,7 @@ Leader和ISR队列里面的所有节点收齐数据后Leader准备应答时挂�
 
 
 
-![](https://unpkg.com/nan-picture/blog/20220302201453.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220302201453.png)
 
 **数据传递语义：**
 
@@ -593,7 +593,7 @@ Leader和ISR队列里面的所有节点收齐数据后Leader准备应答时挂�
 
 所以幂等性只能保证的是在**单分区单会话**内不重复。
 
-![](https://unpkg.com/nan-picture/blog/20220302204338.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220302204338.png)
 
 **如何使用幂等性：**开启参数 **enable.idempotence** 默认为 true，false 关闭。
 
@@ -605,7 +605,7 @@ Leader和ISR队列里面的所有节点收齐数据后Leader准备应答时挂�
 
 **说明：开启事务，必须开启幂等性。**
 
-![](https://unpkg.com/nan-picture/blog/20220302220620.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220302220620.png)
 
 ```java
     @Test
@@ -667,7 +667,7 @@ kafka在1.x及以后版本保证数据单分区有序，条件如下：
 
 - 未开启幂等性：`max.in.flight.requests.per.connection`需要设置为1。
 
-![](https://unpkg.com/nan-picture/blog/20220302221914.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220302221914.png)
 
 原因说明：在kafka1.x以后，启用幂等后，kafka服务端会缓存producer发来的最近5个request的元数据并进行排序，故无论如何，都可以保证最近5个request的数据都是有序的。
 
@@ -679,7 +679,7 @@ kafka在1.x及以后版本保证数据单分区有序，条件如下：
 
 启动 Zookeeper 客户端，使用 ls 命令在kafka目录下（配置文件中连接ZK时的设置），可以查看 Zookeeper 存储的 Kafka 相关信息：
 
-![](https://unpkg.com/nan-picture/blog/20220302233820.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220302233820.png)
 
 - Zookeeper 中会记录整个集群中那些 broker 可用/上线【/brokers/ids[0,1,2]】，0 1 2表示broker的id，在kafka配置文件指定
 - 也会记录每一个 partition 中的 leader 信息以及动态维护的**in-sync replica set（ISR）**（和Leader**保持同步**的Follower+Leader集合）【/brokers/topics/主题名称/partition/第几个分区/state】
@@ -688,7 +688,7 @@ kafka在1.x及以后版本保证数据单分区有序，条件如下：
 
  **Broker总体工作流程：**
 
-![](https://unpkg.com/nan-picture/blog/20220302234808.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220302234808.png)
 
 1. 每台 broker 启动后在 ZK 节点中注册
 2. 每个broker都有各自的Controller模块，抢占 ZK 节点的controller ，谁先注册谁就是Controller Leader
@@ -756,7 +756,7 @@ kafka在1.x及以后版本保证数据单分区有序，条件如下：
 
 （4）等该Follower的LEO大于等于该Partition的HW，即Follower追上Leader之后，就可以重新加入ISR了。
 
-![](https://unpkg.com/nan-picture/blog/20220304233728.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220304233728.png)
 
 **Leader故障：**
 
@@ -764,7 +764,7 @@ kafka在1.x及以后版本保证数据单分区有序，条件如下：
 
 （2）为保证多个副本之间的数据一致性，其余的Follower会先将各自的log文件高于HW的部分截掉，然后从新的Leader同步数据。
 
-![](https://unpkg.com/nan-picture/blog/20220304233744.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220304233744.png)
 
 **注意：**这只能保证副本之间的数据一致性，并不能保证数据不丢失或者不重复。
 
@@ -798,7 +798,7 @@ Topic: second4 Partition: 14 Leader: 2 Replicas: 2,3,0 Isr: 2,3,0
 Topic: second4 Partition: 15 Leader: 3 Replicas: 3,0,1 Isr: 3,0,1
 ```
 
-![](https://unpkg.com/nan-picture/blog/20220305161930.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220305161930.png)
 
 ---
 
@@ -870,7 +870,7 @@ Clearing topic-level throttles on topic first
 
 下面拿一个主题举例说明，假设集群只有一个主题如下图所示：
 
-![](https://unpkg.com/nan-picture/blog/20220305205620.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220305205620.png)
 
 分区2的**AR优先副本是0节点**（第三行，replicas可以理解成AR），但是0节点却不是Leader节点，所以broker0节点的不平衡数加1，AR副本总数是4，所以broker0节点不平衡率为1/4>10%，需要再平衡。
 
@@ -880,7 +880,7 @@ broker2和broker3节点和broker0不平衡率一样，需要再平衡。Broker1�
 
 Topic是逻辑上的概念，而partition是物理上的概念，每个partition对应于一个log文件，该log文件中存储的就是Producer生产的数据。Producer生产的数据会被不断**追加**到该log文件末端，为防止log文件过大导致数据定位效率低，Kafka采取了**分片**和**索引**机制， 将**每个partition分为多个segment**。每个segment包括：“.index”文件、“.log”文件和.timeindex等文件。这些文件位于一个文件夹下，文件夹的命名规则为：topic名称+分区序号，例如：first-0。
 
-![](https://unpkg.com/nan-picture/blog/20220306001210.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220306001210.png)
 
 说明：index文件和log文件都是以当前segment的第一条消息的offset命名。
 
@@ -930,7 +930,7 @@ producerEpoch: -1 partitionLeaderEpoch: 0 isTransactional: false isControl: fals
 true
 ```
 
-![](https://unpkg.com/nan-picture/blog/20220306234956.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220306234956.png)
 
 说明：日志存储参数配置
 
@@ -963,7 +963,7 @@ log.cleanup.policy = delete，所有数据启用删除策略
 
  log.cleanup.policy = compact 所有数据启用压缩策略
 
-![](https://unpkg.com/nan-picture/blog/20220307235402.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220307235402.png)
 
 
 
@@ -982,7 +982,7 @@ log.cleanup.policy = delete，所有数据启用删除策略
 - 顺序写磁盘
   - Kafka 的 producer 生产数据，要写入到 log 文件中，写的过程是一直**追加**到文件末端，为顺序写。官网有数据表明，同样的磁盘，顺序写能到 600M/s，而随机写只有 100K/s。这与磁盘的机械机构有关，顺序写之所以快，是因为其省去了大量磁头寻址的时间。
 
-![](https://unpkg.com/nan-picture/blog/20220306235743.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220306235743.png)
 
 - 页缓存 + 零拷贝技术
 
@@ -990,7 +990,7 @@ log.cleanup.policy = delete，所有数据启用删除策略
 
   - **PageCache页缓存**：Kafka重度依赖底层操作系统提供的PageCache功 能。当上层有写操作时，操作系统只是将数据写入PageCache。当读操作发生时，先从PageCache中查找，如果找不到，再去磁盘中读取。实际上PageCache是把尽可能多的空闲内存都当做了磁盘缓存来使用。
 
-![](https://unpkg.com/nan-picture/blog/20220307000053.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220307000053.png)
 
 | 参数                        | 描述                                                         |
 | --------------------------- | ------------------------------------------------------------ |
@@ -1034,11 +1034,11 @@ coordinator节点选择 = groupid的hashcode值 % 50（ __consumer_offsets的分
 
 例如： groupid的hashcode值 = 1，1% 50 = 1，那么__consumer_offsets 主题的1号分区在哪个broker上，就选择这个节点的coordinator作为这个消费者组的老大。消费者组下的所有的消费者提交offset的时候就往这个分区去提交offset。 
 
-![](https://unpkg.com/nan-picture/blog/20220307235316.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220307235316.png)
 
 ### 消费者组详细消费流程
 
-![](https://unpkg.com/nan-picture/blog/20220308000040.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220308000040.png)
 
 ## 消费者重要参数列表
 
@@ -1157,7 +1157,7 @@ properties.put(ConsumerConfig.PARTITION_ASSIGNMENT_STRATEGY_CONFIG, "org.apache.
 
 注意：如果只是针对 1 个 topic 而言，C0消费者多消费1个分区影响不是很大。但是如果有 N 多个 topic，那么针对每个 topic，消费者 C0都将多消费 1 个分区，topic越多，C0消 费的分区会比其他消费者明显多消费 N 个分区。 容易产生**数据倾斜**！
 
-![](https://unpkg.com/nan-picture/blog/20220313235556.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220313235556.png)
 
 **Range 分区分配再平衡案例：**
 
@@ -1189,7 +1189,7 @@ RoundRobin 针对集群中**所有Topic**而言。
 
 RoundRobin 轮询分区策略，是把所有的 partition 和所有的consumer 都列出来，然后**按照 hashcode 进行排序**，最后通过**轮询算法**来分配 partition 给到各个消费者。
 
-![](https://unpkg.com/nan-picture/blog/20220313235342.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220313235342.png)
 
 **RoundRobin** **分区分配再平衡案例**
 
@@ -1243,7 +1243,7 @@ RoundRobin 轮询分区策略，是把所有的 partition 和所有的consumer �
 
 ## offset位移
 
-![](https://unpkg.com/nan-picture/blog/20220314235740.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220314235740.png)
 
 __consumer_offsets 主题里面采用 key 和 value 的方式存储数据。**key 是 group.id+topic+分区号**，value 就是当前 offset 的值。每隔一段时间，kafka 内部会对这个 topic 进行compact，也就是每个group.id+topic+分区号就保留最新数据。
 
@@ -1291,7 +1291,7 @@ __consumer_offsets 主题里面采用 key 和 value 的方式存储数据。**ke
 
 - auto.commit.interval.ms：自动提交offset的时间间隔，默认是5s
 
-![](https://unpkg.com/nan-picture/blog/20220315230324.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220315230324.png)
 
 ```java
 // 是否自动提交 offset
@@ -1388,7 +1388,7 @@ auto.offset.reset = earliest | latest | none 默认是 latest。
 
 （3）none：如果未找到消费者组的先前偏移量，则向消费者抛出异常。
 
-![](https://unpkg.com/nan-picture/blog/20220315231605.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220315231605.png)
 
 任意指定 offset 位移开始消费（注意：每次执行完，需要修改消费者组名）：
 
@@ -1487,22 +1487,22 @@ auto.offset.reset = earliest | latest | none 默认是 latest。
 
 **重复消费：**已经消费了数据，但是 offset 没提交。
 
-![](https://unpkg.com/nan-picture/blog/20220316232534.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220316232534.png)
 
 **漏消费：**设置offset为手动提交，当offset被提交时，数据还在内存中未落盘，此时刚好消费者线程被kill掉，那么offset已经提交，但是数据未处理，导致这部分内存中的数据丢失。
 
-![](https://unpkg.com/nan-picture/blog/20220316232709.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220316232709.png)
 
 如果想完成Consumer端的精准一次性消费，那么需要Kafka消费端将消费过程和提交offset过程做**原子绑定**。此时我们需要将Kafka的offset保存到支持事务的自定义介质（比如MySQL）。这部分知识会在后续项目部分涉及。
 
-![](https://unpkg.com/nan-picture/blog/20220316232839.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220316232839.png)
 
 ## 数据积压
 
 - 如果是Kafka消费能力不足，则可以考虑增加Topic的分区数，并且同时提升消费组的消费者数量，消费者数 = 分区数。（两者缺一不可） 
 - 如果是下游的数据处理不及时：提高每批次拉取的数量。批次拉取数据过少（拉取数据/处理时间 < 生产速度），使处理的数据小于生产的数据，也会造成数据积压。
 
-![](https://unpkg.com/nan-picture/blog/20220316233043.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220316233043.png)
 
 # Kafka监控
 
@@ -1712,7 +1712,7 @@ efak.password=123456
 
 ## 架构
 
-![](https://unpkg.com/nan-picture/blog/20220319193800.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220319193800.png)
 
 左图为 Kafka 现有架构，元数据在 zookeeper 中，运行时动态选举 controller，由controller 进行 Kafka 集群管理。右图为 kraft 模式架构（实验性），不再依赖 zookeeper 集群，而是用三台 controller 节点代替 zookeeper，元数据保存在 controller 中，由 controller 直接进行 Kafka 集群管理。
 

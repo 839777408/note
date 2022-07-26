@@ -5,8 +5,8 @@ tags:
   - Redis
 categories:
   - 总结
-top_img: 'https://unpkg.com/nan-picture/img/wp9.jpg'
-cover: 'https://unpkg.com/nan-picture/img/wp9.jpg'
+top_img: 'https://cdn.jsdelivr.net/npm/nan-picture/img/wp9.jpg'
+cover: 'https://cdn.jsdelivr.net/npm/nan-picture/img/wp9.jpg'
 abbrlink: 275e
 date: 2020-09-05 12:36:31
 updated: 2020-09-05 12:36:35

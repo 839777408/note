@@ -4,8 +4,8 @@ categories:
   - Linux
 tags:
   - Linux
-top_img: 'https://unpkg.com/nan-picture/img/wp4.jpg'
-cover: 'https://unpkg.com/nan-picture/img/wp4.jpg'
+top_img: 'https://cdn.jsdelivr.net/npm/nan-picture/img/wp4.jpg'
+cover: 'https://cdn.jsdelivr.net/npm/nan-picture/img/wp4.jpg'
 abbrlink: 59553
 date: 2021-11-21 17:31:58
 updated: 2021-11-21 22:46:41

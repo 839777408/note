@@ -4,8 +4,8 @@ tags:
   - Druid
 categories:
   - SpringBoot
-top_img: 'https://unpkg.com/nan-picture/img/wp4.jpg'
-cover: 'https://unpkg.com/nan-picture/img/wp4.jpg'
+top_img: 'https://cdn.jsdelivr.net/npm/nan-picture/img/wp4.jpg'
+cover: 'https://cdn.jsdelivr.net/npm/nan-picture/img/wp4.jpg'
 abbrlink: 13be
 date: 2021-01-10 00:38:40
 updated: 2021-01-10 00:38:51
@@ -114,7 +114,7 @@ public class DataSourceConfig {
 
 http://localhost:8080/druid/index.html
 
-![](https://unpkg.com/nan-picture/blog/20210110004042.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20210110004042.png)
 
 ---
 

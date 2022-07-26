@@ -6,8 +6,8 @@ tags:
 categories:
   - Java
   - JavaWeb
-top_img: 'https://unpkg.com/nan-picture/img/wp1.jpg'
-cover: 'https://unpkg.com/nan-picture/img/wp1.jpg'
+top_img: 'https://cdn.jsdelivr.net/npm/nan-picture/img/wp1.jpg'
+cover: 'https://cdn.jsdelivr.net/npm/nan-picture/img/wp1.jpg'
 abbrlink: '9279'
 date: 2020-10-04 21:27:18
 updated: 2020-10-04 21:27:22
@@ -589,7 +589,7 @@ public class SessionServlet extends BaseServlet {
 
 Session 技术底层其实是 **基于Cookie技术** 来实现的。服务器向客户端浏览器发送一个名为JSESSIONID的Cookie，它的值为该Session的id。该Cookie的maxAge属性一般为–1，表示仅当前浏览器内有效，并且各浏览器窗口间不共享，关闭浏览器就会失效。
 
-![](https://unpkg.com/nan-picture/blog/20220706214941.png)
+![](https://cdn.jsdelivr.net/npm/nan-picture/blog/20220706214941.png)
 
 
 
